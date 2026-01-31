@@ -1,0 +1,25 @@
+# Handle line endings automatically for files detected as text
+# and leave binary files untouched.
+* text=auto
+
+# Standardize all source code files to use LF (Linux/macOS style)
+# when committed to the repository, but convert to platform-specific
+# (CRLF on Windows) when checked out.
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Explicitly declare file types that should always be CRLF (rare, but sometimes needed for Windows scripts)
+*.bat text eol=crlf
+*.ps1 text eol=crlf
