@@ -1,0 +1,34 @@
+# --- Global ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- Security (NEVER COMMIT THESE) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Backend (Python / UV / FastAPI) ---
+backend/.venv/
+backend/__pycache__/
+backend/*.py[cod]
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+# Note: We DO commit pyproject.toml and uv.lock
+
+# --- Frontend (Node / Next.js) ---
+frontend/node_modules/
+frontend/.next/
+frontend/build/
+frontend/dist/
+frontend/.pnpm-store/
+# Note: We DO commit package.json and pnpm-lock.yaml
+
+# --- Infrastructure / Docker ---
+infra/postgres-data/
+infra/minio-data/
